@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Hotel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8c077add-3fac-44c6-954f-c7243b2f3814" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="fixed-nav">
+            <div class="header__nav">
+                <a href="#"><img src="./Group 1000001753.svg" alt="Bank Hotel"></a>
+                <nav class="navigation">
+                    <ul class="nav">
+                        <li class="nav__item active">
+                            <a href="index.html" class="head__link">Главная</a>
+                        </li>
+                        <li class="nav__item head__nav">
+                            <a href="booking.html" class="head__link">Забронировать</a>
+                        </li>
+                        <li class="nav__item head__nav">
+                            <a href="contacts.html" class="head__link">Контакты</a>
+                        </li>
+                        <li class="nav__item head__nav">
+                            <a href="rooms.html" class="head__link">Номера</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn__nav">
+                    Связаться
+                    <img class="img__btn" src="./path.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="content__head">
+            <h1 class="text-content">THE</h1>
+            <h1 class="bankHotel">
+                <span class="bank">Bank</span>
+                <span class="hotel">Hotel</span>
+            </h1>
+            <h1 class="content__text_dom">
+                <span class="text__content">ОСТАВАЙТЕСЬ С НАМИ ЧУСТВУЙТЕ СЕБЯ КАК ДОМА</span>
+            </h1>
+
+            <div class="btn-block">
+                <button class="btn__head">Забронировать</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section1">
+            <div class="block__info__sec1">
+                <div class="block__info__text">
+                    <h1 class="text__blockinfo">Сделать заказ</h1>
+                    <p class="subtitle">Откройте для себя идеальное пространство для вас!</p>
+                </div>
+
+                <div class="order">
+                    <div class="data">
+                        <h1 class="text__date">Дата приезда</h1>
+                        <div class="order__block date-picker">
+                            <img class="img__data" src="./Framekal.svg" alt="">
+                            <input type="text" id="date-input" class="text__check" placeholder="Выберите дату" readonly>
+                        </div>
+                    </div>
+
+                    <div class="adults">
+                        <h1 class="text-adults">Взрослые</h1>
+                        <div class="adults-block adults-selector">
+                            <img class="img-adults" src="./Vector people.svg" alt="">
+                            <h1 class="text-adults1">Взрослые</h1>
+                            <p class="quantity" id="adults-quantity">2</p>
+                            <img class="Arrow-list" src="./Arrow 6.svg" alt="">
+                        </div>
+                        <div class="quantity-selector" id="adults-selector">
+                            <button type="button" class="quantity-minus">-</button>
+                            <span class="quantity-value">2</span>
+                            <button type="button" class="quantity-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="children">
+                        <h1 class="text-adults">Дети</h1>
+                        <div class="adults-block children-selector">
+                            <img class="img-adults" src="./Vectorchild.svg" alt="">
+                            <h1 class="text-adults1">Дети</h1>
+                            <p class="quantity" id="children-quantity">0</p>
+                            <img class="Arrow-list" src="./Arrow 6.svg" alt="">
+                        </div>
+                        <div class="quantity-selector" id="children-selector">
+                            <button type="button" class="quantity-minus">-</button>
+                            <span class="quantity-value">0</span>
+                            <button type="button" class="quantity-plus">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn__sec1">Заказать</button>
+                </div>
+            </div>
+        </section>
+
+    <section class="section2">
+    <div class="container">
+        <div class="scroll-container">
+            <div class="scroll__sec2">
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+                <div class="block1__scroll">
+                    <img class="img__block1" src="./c66f6053ce97df86b5fb25f7412b31ca 11.png" alt="">
+                    <div class="info__block1">
+                        <h1 class="text__info__block1">Solo Sokos Hotel palace bridge</h1>
+                        <div class="icon__text__star">
+                            <img class="img__icon" src="./Vector place.svg" alt="">
+                            <h1 class="text__place">Вологда, Россия</h1>
+                            <div class="stars__block">
+                                <img class="img__star" src="./Vector star.svg" alt="">
+                                <h1 class="star__text">9,5</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__room">
+                        <span class="text__price">8 900 Р</span> <span class="text__price2">/ за ночь</span>
+                        <button class="button-buy">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-controls">
+            <button id="right-btn"><img src="./mingcute_right-fill.png" alt=""></button>
+            <button id="left-btn"><img src="./mingcute_left-fill.png" alt=""></button>
+        </div>
+    </div>
+    </section>
+
+        <section class="section3">
+        <div class="block1__grid">
+            <div class="img__block1__sec3">
+                <div class="block__text__pricce">
+                    <span class="text__price3">8 900 Р</span> <span class="text__price4">/ за ночь</span>
+                    <button class="btn__price">Забронировать</button>
+                </div>
+            </div>
+            <div class="text__block__info">
+                <h1 class="text__title">About hotel gallery</h1>
+                <p class="text__info__description">While some of these examples are real – actually offering guests a stay in the locations advertised – it’s mainly just a way. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti temporibus suscipit voluptatem obcaecati, incidunt molestiae rem.</p>
+                <button class="btn__text__info">Все номера</button>
+            </div>
+        </div>
+
+        <div class="block2__grid">
+            <div class="img__block2__sec3">
+                <div class="block__text__pricce2">
+                    <span class="text__price3">8 900 Р</span> <span class="text__price4">/ за ночь</span>
+                    <button class="btn__price2">Забронировать</button>
+                </div>
+            </div>
+            <div class="img__block3__sec3">
+                <div class="block__text__pricce3">
+                    <span class="text__price3">8 900 Р</span> <span class="text__price4">/ за ночь</span>
+                    <button class="btn__price3">Забронировать</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section4">
+            <h1 class="text-sec4">Почему стоит бронировать напрямую у нас?</h1>
+            
+            <div class="benefits-container">
+                <div class="benefits-scroll" id="benefitsScroll">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                <line x1="12" y1="20" x2="12" y2="20"></line>
+                            </svg>
+                        </div>
+                        <h3>Быстрый Wi-Fi</h3>
+                        <p>Высокоскоростной интернет на всей территории отеля без ограничений по трафику и скорости подключения.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                                <circle cx="7" cy="17" r="2"></circle>
+                                <path d="M9 17h6"></path>
+                                <circle cx="17" cy="17" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Бесплатная парковка</h3>
+                        <p>Просторная охраняемая парковка для гостей отеля. Безопасность вашего автомобиля гарантирована.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Специальные предложения</h3>
+                        <p>Эксклюзивные скидки и бонусы при бронировании напрямую через наш официальный сайт.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 8v4l3 3"></path>
+                            </svg>
+                        </div>
+                        <h3>Круглосуточная служба</h3>
+                        <p>Наша служба поддержки готова помочь вам 24/7. Решаем любые вопросы быстро и профессионально.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                        </div>
+                        <h3>Премиальные номера</h3>
+                        <p>Просторные номера с дизайнерским ремонтом и всем необходимым для комфортного проживания.</p>
+                    </div>
+                </div>
+                
+                <div class="scroll-nav" id="scrollNav">
+                    <div class="scroll-dot active"></div>
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="./Group 1000001753.svg" alt="Bank Hotel" class="footer-logo">
+                    <p class="footer-slogan">Ваш комфорт — наш приоритет</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="ВКонтакте">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93V15.07C2 20.67 3.33 22 8.93 22H15.07C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2M18.15 16.27H16.69C16.14 16.27 15.97 15.82 15 14.83C14.12 13.94 13.94 13.94 13.64 13.94C13.34 13.94 13.21 14.03 13.21 14.5V15.69C13.21 16.04 13.04 16.26 12.39 16.26C10.82 16.26 8.89 15.23 7.73 13.04C5.82 9.52 5.26 7.09 5.26 7.09C5.26 6.68 5.4 6.56 5.81 6.56H7.27C7.69 6.56 7.83 6.75 7.97 7.14C8.69 9.3 9.95 11.47 10.45 11.47C10.62 11.47 10.75 11.4 10.75 10.96V8.28C10.75 7.91 10.67 7.78 10.17 7.78H8.62C8.15 7.78 8 7.94 8 8.31V11.32C8 11.71 7.86 11.8 7.58 11.8H6.56V12.69H7.93C8.37 12.69 8.5 12.87 8.5 13.2V13.94C8.5 14.31 8.36 14.5 7.93 14.5H6.56V15.38H8.62C9.57 15.38 9.9 15.15 10.04 14.5C10.34 13.25 11.08 10.73 11.12 10.52C11.16 10.33 11.12 10.22 10.87 10.22C10.62 10.22 9.72 10.35 8.37 10.35C7.58 10.35 7.08 10.32 6.89 10.26C6.5 10.13 6.39 9.9 6.39 9.5V7.04C6.39 6.5 6.58 6.34 7.47 6.34H11.12C11.59 6.34 11.76 6.5 11.76 6.93V9.85L11.77 9.89Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2M7.6 4C5.6 4 4 5.6 4 7.6V16.4C4 18.4 5.6 20 7.6 20H16.4C18.4 20 20 18.4 20 16.4V7.6C20 5.6 18.4 4 16.4 4H7.6M17.25 5.5C17.9 5.5 18.4 6 18.4 6.65C18.4 7.3 17.9 7.8 17.25 7.8C16.6 7.8 16.1 7.3 16.1 6.65C16.1 6 16.6 5.5 17.25 5.5M12 7C14.8 7 17 9.2 17 12C17 14.8 14.8 17 12 17C9.2 17 7 14.8 7 12C7 9.2 9.2 7 12 7M12 9C10.3 9 9 10.3 9 12C9 13.7 10.3 15 12 15C13.7 15 15 13.7 15 12C15 10.3 13.7 9 12 9Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="footer-link">Главная</a></li>
+                        <li><a href="rooms.html" class="footer-link">Номера и люксы</a></li>
+                        <li><a href="booking.html" class="footer-link">Бронирование</a></li>
+                        <li><a href="contacts.html" class="footer-link">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-contacts">
+                    <h3 class="footer-title">Контакты</h3>
+                    <address class="contact-info">
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Санкт-Петербург, Невский пр. 28</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            <span>+7 (812) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>info@bankhotel.ru</span>
+                        </div>
+                    </address>
+                </div>
+    
+                <div class="footer-subscribe">
+                    <h3 class="footer-title">Подписка на новости</h3>
+                    <p class="subscribe-text">Будьте в курсе специальных предложений</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2023 Bank Hotel. Все права защищены
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Политика конфиденциальности</a>
+                    <a href="#" class="legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Модальное окно -->
+     <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Связаться с нами</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./map.js"></script>
+    <script src="./scroll.js"></script>
+    <script>
+        flatpickr("#date-input", {
+            locale: "ru",
+            dateFormat: "d.m.Y",
+            minDate: "today"
+        });
+
+        document.querySelectorAll('.quantity-selector').forEach(selector => {
+            const minusBtn = selector.querySelector('.quantity-minus');
+            const plusBtn = selector.querySelector('.quantity-plus');
+            const valueElement = selector.querySelector('.quantity-value');
+            const targetElement = document.getElementById(
+                selector.id === 'adults-selector' ? 'adults-quantity' : 'children-quantity'
+            );
+
+            minusBtn.addEventListener('click', () => {
+                let value = parseInt(valueElement.textContent);
+                if (value > (selector.id === 'adults-selector' ? 1 : 0)) {
+                    value--;
+                    valueElement.textContent = value;
+                    targetElement.textContent = value;
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let value = parseInt(valueElement.textContent);
+                if (value < 10) {
+                    value++;
+                    valueElement.textContent = value;
+                    targetElement.textContent = value;
+                }
+            });
+        });
+
+        document.querySelector('.adults-selector').addEventListener('click', function() {
+            document.getElementById('adults-selector').classList.toggle('show');
+            document.getElementById('children-selector').classList.remove('show');
+        });
+
+        document.querySelector('.children-selector').addEventListener('click', function() {
+            document.getElementById('children-selector').classList.toggle('show');
+            document.getElementById('adults-selector').classList.remove('show');
+        });
+
+        const modal = document.getElementById('modal-overlay');
+        const contactBtn = document.querySelector('.btn__nav');
+        const closeModal = document.querySelector('.close-modal');
+
+        contactBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
